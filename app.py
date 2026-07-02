@@ -9,11 +9,11 @@ def home():
 if __name__ == "__main__":
     app.run(debug=True)
 from flask import Flask, render_template
-from routes.invoices import invoices_bp  # 👈 زيد هادي
+from routes.invoices import invoices_bp 
 
 app = Flask(__name__)
 
-app.register_blueprint(invoices_bp)  # 👈 وزيد هادي
+app.register_blueprint(invoices_bp) 
 
 @app.route("/")
 def home():
